@@ -1,0 +1,793 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>org.scatter.Scatter</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../lib/template.css" />
+      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img src="../../lib/trait_big.png" />
+        <p id="owner"><a name="org" class="extype" href="../package.html">org</a>.<a name="org.scatter" class="extype" href="package.html">scatter</a></p>
+        <h1>Scatter</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <span class="name">Scatter</span>
+        
+        <span class="result"> extends <span name="org.scatter.Plumbing" class="extype">Plumbing</span> with <a name="org.scatter.Transformations" class="extype" href="Transformations.html">Transformations</a> with <a name="org.scatter.Validations" class="extype" href="Validations.html">Validations</a></span>
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Trait providing access to scatter and its request transformations and
+response validations
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a name="org.scatter.Scatter" class="extype" href="">Scatter</a> with <span name="cc.spray.test.SprayTest" class="extype">SprayTest</span></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a name="org.scatter.Validations" class="extype" href="Validations.html">Validations</a>, <a name="org.scatter.Transformations" class="extype" href="Transformations.html">Transformations</a>, <span name="org.scatter.Plumbing" class="extype">Plumbing</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+        </div></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          <div id="order">
+                <span class="filtertype">Ordering</span>
+                <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              </div>
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show all</span></li></ol>
+                <ol id="linearization"><li name="org.scatter.Scatter" class="in"><span>Scatter</span></li><li name="org.scatter.Validations" class="in"><span>Validations</span></li><li name="org.scatter.Transformations" class="in"><span>Transformations</span></li><li name="org.scatter.Plumbing" class="in"><span>Plumbing</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+              </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="org.scatter.Transformations.DELETE" data-isabs="false">
+      <a id="DELETE:DELETE"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Transformations$DELETE.html"><span class="name">DELETE</span></a>
+        
+        <span class="params">(<span name="path">path: String</span>)</span><span class="result"> extends MethodTransformation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to DELETE and adds path fragment to the request</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.GET" data-isabs="false">
+      <a id="GET:GET"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Transformations$GET.html"><span class="name">GET</span></a>
+        
+        <span class="params">(<span name="path">path: String</span>)</span><span class="result"> extends MethodTransformation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to GET and adds path fragment to the request</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.HEAD" data-isabs="false">
+      <a id="HEAD:HEAD"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Transformations$HEAD.html"><span class="name">HEAD</span></a>
+        
+        <span class="params">(<span name="path">path: String</span>)</span><span class="result"> extends MethodTransformation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to HEAD and adds path fragment to the request</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.OPTIONS" data-isabs="false">
+      <a id="OPTIONS:OPTIONS"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Transformations$OPTIONS.html"><span class="name">OPTIONS</span></a>
+        
+        <span class="params">(<span name="path">path: String</span>)</span><span class="result"> extends MethodTransformation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to OPTIONS and adds path fragment to the request</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.POST" data-isabs="false">
+      <a id="POST:POST"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Transformations$POST.html"><span class="name">POST</span></a>
+        
+        <span class="params">(<span name="path">path: String</span>)</span><span class="result"> extends MethodTransformation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to POST and adds path fragment to the request</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.PUT" data-isabs="false">
+      <a id="PUT:PUT"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Transformations$PUT.html"><span class="name">PUT</span></a>
+        
+        <span class="params">(<span name="path">path: String</span>)</span><span class="result"> extends MethodTransformation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to PUT and adds path fragment to the request</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.TRACE" data-isabs="false">
+      <a id="TRACE:TRACE"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Transformations$TRACE.html"><span class="name">TRACE</span></a>
+        
+        <span class="params">(<span name="path">path: String</span>)</span><span class="result"> extends MethodTransformation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to TRACE and adds path fragment to the request</p>
+    </li><li visbl="pub" name="org.scatter.Validations._not" data-isabs="false">
+      <a id="_not:_not"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Validations$_not.html"><span class="name">_not</span></a>
+        
+        <span class="params">(<span name="validation">validation: ResponseValidation</span>)</span><span class="result"> extends ResponseValidation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Negates the given validation</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.charset" data-isabs="false">
+      <a id="charset:charset"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Transformations$charset.html"><span class="name">charset</span></a>
+        
+        <span class="params">(<span name="cset">cset: HttpCharset</span>)</span><span class="result"> extends RequestTransformation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets the accepted charset of the request</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.form" data-isabs="false">
+      <a id="form:form"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Transformations$form.html"><span class="name">form</span></a>
+        
+        <span class="params">(<span name="data">data: (String, String)*</span>)</span><span class="result"> extends ContentTransformation[Seq[(String, String)]] with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets the content of the request to be a form with the given fields</p>
+    </li><li visbl="pub" name="org.scatter.Validations.hasCharset" data-isabs="false">
+      <a id="hasCharset:hasCharset"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Validations$hasCharset.html"><span class="name">hasCharset</span></a>
+        
+        <span class="params">(<span name="charset">charset: String</span>)</span><span class="result"> extends ContentValidation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Validates that response has the given charset</p>
+    </li><li visbl="pub" name="org.scatter.Validations.hasExactJson" data-isabs="false">
+      <a id="hasExactJson:hasExactJson[A]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Validations$hasExactJson.html"><span class="name">hasExactJson</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="data">data: A</span>, <span name="evidence$1">evidence$1: RootJsonReader[A]</span>)</span><span class="result"> extends ContentValidation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Validates that response has exactly the given json</p>
+    </li><li visbl="prt" name="org.scatter.Validations.hasHeaderValidation" data-isabs="false">
+      <a id="hasHeaderValidation:hasHeaderValidation"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Validations$hasHeaderValidation.html"><span class="name">hasHeaderValidation</span></a>
+        
+        <span class="params">(<span name="name">name: String</span>, <span name="vd">vd: (String) ⇒ Boolean</span>)</span><span class="result"> extends ResponseValidation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Helper class for supporting multiple kinds of header validations</p>
+    </li><li visbl="pub" name="org.scatter.Validations.hasJson" data-isabs="false">
+      <a id="hasJson:hasJson[A]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Validations$hasJson.html"><span class="name">hasJson</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="f">f: (A) ⇒ Boolean</span>, <span name="evidence$2">evidence$2: RootJsonReader[A]</span>)</span><span class="result"> extends ContentValidation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Validates that response json fulfills the given predicate</p>
+    </li><li visbl="pub" name="org.scatter.Validations.hasMediaType" data-isabs="false">
+      <a id="hasMediaType:hasMediaType"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Validations$hasMediaType.html"><span class="name">hasMediaType</span></a>
+        
+        <span class="params">(<span name="mtype">mtype: String</span>)</span><span class="result"> extends ContentValidation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Validates that response has the given media type</p>
+    </li><li visbl="pub" name="org.scatter.Validations.hasStatus" data-isabs="false">
+      <a id="hasStatus:hasStatus"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Validations$hasStatus.html"><span class="name">hasStatus</span></a>
+        
+        <span class="params">(<span name="status">status: Int</span>)</span><span class="result"> extends ResponseValidation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Validates that response has the given status</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.header" data-isabs="false">
+      <a id="header:header"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Transformations$header.html"><span class="name">header</span></a>
+        
+        <span class="params">(<span name="name">name: String</span>, <span name="value">value: String</span>)</span><span class="result"> extends RequestTransformation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Adds header to the request</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.json" data-isabs="false">
+      <a id="json:json[A]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Transformations$json.html"><span class="name">json</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="data">data: A</span>, <span name="evidence$1">evidence$1: RootJsonWriter[A]</span>)</span><span class="result"> extends ContentTransformation[A] with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets the content of the request to be json with the given data</p>
+    </li><li visbl="pub" name="org.scatter.Validations.oneOf" data-isabs="false">
+      <a id="oneOf:oneOf"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Validations$oneOf.html"><span class="name">oneOf</span></a>
+        
+        <span class="params">(<span name="v1">v1: ResponseValidation</span>, <span name="v2">v2: ResponseValidation</span>, <span name="rest">rest: ResponseValidation*</span>)</span><span class="result"> extends ResponseValidation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Validates that response matches exactly ONE of the given validations</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.path" data-isabs="false">
+      <a id="path:path"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Transformations$path.html"><span class="name">path</span></a>
+        
+        <span class="params">(<span name="path">path: String</span>)</span><span class="result"> extends RequestTransformation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Adds path fragment to request</p>
+    </li></ol>
+            </div>
+        
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">##</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="org.scatter.Transformations.DELETE" data-isabs="false">
+      <a id="DELETE:DELETE"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Transformations$DELETE$.html"><span class="name">DELETE</span></a>
+        
+        <span class="result"> extends DELETE</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to DELETE
+</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.GET" data-isabs="false">
+      <a id="GET:GET"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Transformations$GET$.html"><span class="name">GET</span></a>
+        
+        <span class="result"> extends GET</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to GET
+</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.HEAD" data-isabs="false">
+      <a id="HEAD:HEAD"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Transformations$HEAD$.html"><span class="name">HEAD</span></a>
+        
+        <span class="result"> extends HEAD</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to HEAD
+</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.OPTIONS" data-isabs="false">
+      <a id="OPTIONS:OPTIONS"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Transformations$OPTIONS$.html"><span class="name">OPTIONS</span></a>
+        
+        <span class="result"> extends OPTIONS</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to OPTIONS
+</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.POST" data-isabs="false">
+      <a id="POST:POST"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Transformations$POST$.html"><span class="name">POST</span></a>
+        
+        <span class="result"> extends POST</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to POST
+</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.PUT" data-isabs="false">
+      <a id="PUT:PUT"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Transformations$PUT$.html"><span class="name">PUT</span></a>
+        
+        <span class="result"> extends PUT</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to PUT
+</p>
+    </li><li visbl="pub" name="org.scatter.Transformations.TRACE" data-isabs="false">
+      <a id="TRACE:TRACE"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Transformations$TRACE$.html"><span class="name">TRACE</span></a>
+        
+        <span class="result"> extends TRACE</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sets request method to TRACE
+</p>
+    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">clone</span>
+        
+        <span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">eq</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">equals</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">finalize</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
+      <a id="getClass():java.lang.Class[_]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">getClass</span>
+        
+        <span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="org.scatter.Validations.hasCharset" data-isabs="false">
+      <a id="hasCharset:hasCharset"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Validations$hasCharset$.html"><span class="name">hasCharset</span></a>
+        
+        <span class="result"> extends Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Provides alternative methods for creating hasCharset
+</p>
+    </li><li visbl="pub" name="org.scatter.Validations.hasHeader" data-isabs="false">
+      <a id="hasHeader:hasHeader"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Validations$hasHeader$.html"><span class="name">hasHeader</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Validates that response has the given header
+</p>
+    </li><li visbl="pub" name="org.scatter.Validations.hasMediaType" data-isabs="false">
+      <a id="hasMediaType:hasMediaType"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Validations$hasMediaType$.html"><span class="name">hasMediaType</span></a>
+        
+        <span class="result"> extends Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Provides alternative methods for creating hasMediaType
+</p>
+    </li><li visbl="pub" name="org.scatter.Validations.hasNoContent" data-isabs="false">
+      <a id="hasNoContent:hasNoContent"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Validations$hasNoContent$.html"><span class="name">hasNoContent</span></a>
+        
+        <span class="result"> extends ResponseValidation with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Validates that response has no content
+</p>
+    </li><li visbl="pub" name="org.scatter.Validations.hasStatus" data-isabs="false">
+      <a id="hasStatus:hasStatus"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Validations$hasStatus$.html"><span class="name">hasStatus</span></a>
+        
+        <span class="result"> extends Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Provides alternative methods for creating hasStatus
+</p>
+    </li><li visbl="pub" name="org.scatter.Validations.hasText" data-isabs="false">
+      <a id="hasText:hasText"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Validations$hasText$.html"><span class="name">hasText</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Validates that response content, when unmarshalled as string, has the given text
+</p>
+    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">hashCode</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="org.scatter.Transformations.header" data-isabs="false">
+      <a id="header:header"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Transformations$header$.html"><span class="name">header</span></a>
+        
+        <span class="result"> extends Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Adds alternative methods for request header creation
+</p>
+    </li><li visbl="pub" name="org.scatter.Scatter#httpRequest2ServiceRequest" data-isabs="false">
+      <a id="httpRequest2ServiceRequest(HttpRequest):ServiceRequest"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">httpRequest2ServiceRequest</span>
+        
+        <span class="params">(<span name="r">r: <span name="cc.spray.http.HttpRequest" class="extype">HttpRequest</span></span>)</span><span class="result">: <span name="org.scatter.Plumbing.ServiceRequest" class="extype">ServiceRequest</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+    </li><li visbl="pub" name="org.scatter.Scatter#httpRequest2Validator" data-isabs="false">
+      <a id="httpRequest2Validator(HttpRequest)(Route):Validator"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">httpRequest2Validator</span>
+        
+        <span class="params">(<span name="r">r: <span name="cc.spray.http.HttpRequest" class="extype">HttpRequest</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="route">route: Route</span>)</span><span class="result">: <span name="org.scatter.Plumbing.Validator" class="extype">Validator</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+    </li><li visbl="pub" name="org.scatter.Scatter#httpResponse2Validator" data-isabs="false">
+      <a id="httpResponse2Validator(HttpResponse):Validator"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">httpResponse2Validator</span>
+        
+        <span class="params">(<span name="r">r: <span name="cc.spray.http.HttpResponse" class="extype">HttpResponse</span></span>)</span><span class="result">: <span name="org.scatter.Plumbing.Validator" class="extype">Validator</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">ne</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">notify</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">notifyAll</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="org.scatter.Scatter#requestChain2ServiceRequest" data-isabs="false">
+      <a id="requestChain2ServiceRequest[A](A)((A) ⇒ RequestChain):ServiceRequest"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">requestChain2ServiceRequest</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="r">r: A</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: (A) ⇒ <span name="org.scatter.RequestChain" class="extype">RequestChain</span></span>)</span><span class="result">: <span name="org.scatter.Plumbing.ServiceRequest" class="extype">ServiceRequest</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+    </li><li visbl="pub" name="org.scatter.Scatter#requestChain2Validator" data-isabs="false">
+      <a id="requestChain2Validator[A](A)(Route,(A) ⇒ RequestChain):Validator"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">requestChain2Validator</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="r">r: A</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="route">route: Route</span>, <span name="conv">conv: (A) ⇒ <span name="org.scatter.RequestChain" class="extype">RequestChain</span></span>)</span><span class="result">: <span name="org.scatter.Plumbing.Validator" class="extype">Validator</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+    </li><li visbl="prt" name="org.scatter.Plumbing#signalFailure" data-isabs="false">
+      <a id="signalFailure(String):Nothing"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">signalFailure</span>
+        
+        <span class="params">(<span name="reason">reason: String</span>)</span><span class="result">: <span name="scala.Nothing" class="extype">Nothing</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">copied from SprayTest (spray 0.</p><div class="fullcomment"><div class="comment cmt"><p>copied from SprayTest (spray 0.8.0)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>Plumbing</dd><dt>See also</dt><dd><span class="cmt"><p>cc.spray.test.SprayTest#doFail(String)
+</p></span></dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
+      <a id="synchronized[T0](⇒ T0):T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">synchronized</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">toString</span>
+        
+        <span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div name="org.scatter.Validations" class="parent">
+              <h3>Inherited from <a name="org.scatter.Validations" class="extype" href="Validations.html">Validations</a></h3>
+            </div><div name="org.scatter.Transformations" class="parent">
+              <h3>Inherited from <a name="org.scatter.Transformations" class="extype" href="Transformations.html">Transformations</a></h3>
+            </div><div name="org.scatter.Plumbing" class="parent">
+              <h3>Inherited from <span name="org.scatter.Plumbing" class="extype">Plumbing</span></h3>
+            </div><div name="scala.AnyRef" class="parent">
+              <h3>Inherited from AnyRef</h3>
+            </div><div name="scala.Any" class="parent">
+              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+            </div>
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
