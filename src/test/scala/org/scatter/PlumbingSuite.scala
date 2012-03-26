@@ -16,6 +16,8 @@
 
 package org.scatter
 
+import cc.spray._
+import cc.spray.typeconversion.DefaultUnmarshallers._
 import cc.spray.test.SprayTest
 import cc.spray.{Directives, Route}
 import org.scalatest.matchers.MustMatchers
@@ -43,6 +45,23 @@ class PlumbingSuite extends FunSuite with
 		val serviceRequest = new ServiceRequest(requestChain.toHttpRequest)
 		val response = serviceRequest >>> TestService.route
 		response.status must be(Created)
+	}
+
+	test("service request (implicit rejection handler)") {
+		implicit val customRejectionHandler: RejectionHandler = {
+			case AuthenticationFailedRejection(realm) :: _ =>
+				HttpResponse(Unauthorized, "You shall not pass!")
+		}
+
+		val testRoute: Route = {
+			_.reject(AuthenticationFailedRejection("foo"))
+		}
+		val requestChain = RequestChain(List(GET))
+		val serviceRequest = new ServiceRequest(requestChain.toHttpRequest)
+		val response = serviceRequest >>> testRoute
+
+		response.status must be(Unauthorized)
+		response.content.as[String] must equal(Right("You shall not pass!"))
 	}
 
 	test("validator (success)") {

@@ -62,6 +62,8 @@ Let's say that you are making a dog registry service. The users of the service
 		// 1
 		implicit val route = new DogService().route
 
+		implicit val rejectionHandler = dogServiceRejectionHandler orElse RejectionHandler.Default
+
 		describe("Dog Service") {
 
 			// 2

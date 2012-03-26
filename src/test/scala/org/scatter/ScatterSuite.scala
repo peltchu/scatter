@@ -16,10 +16,12 @@
 
 package org.scatter
 
+import cc.spray._
 import cc.spray.test.SprayTest
-import cc.spray.Directives
 import cc.spray.http._
+import cc.spray.http.StatusCodes._
 import org.scalatest.{TestFailedException, FunSuite}
+import cc.spray.{AuthenticationFailedRejection, Directives}
 
 class ScatterSuite extends FunSuite with SprayTest with Scatter {
 	object TestService extends Directives {
@@ -64,4 +66,17 @@ class ScatterSuite extends FunSuite with SprayTest with Scatter {
     implicit val route = TestService.route
     req ==> hasStatus(200)
   }
+
+	test("custom rejection handler") {
+		implicit val customRejectionHandler: RejectionHandler = {
+			case AuthenticationFailedRejection(realm) :: _ =>
+				HttpResponse(Unauthorized, "You shall not pass!")
+		}
+
+		implicit val testRoute: Route = {
+			_.reject(AuthenticationFailedRejection("foo"))
+		}
+
+		GET ==> hasStatus(Unauthorized) ~ hasText("You shall not pass!")
+	}
 }

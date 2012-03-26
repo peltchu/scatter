@@ -16,9 +16,9 @@
 
 package org.scatter
 
-import cc.spray.Route
 import cc.spray.http.{HttpResponse, HttpRequest}
 import cc.spray.test.SprayTest
+import cc.spray.{HttpServiceLogic, RejectionHandler}
 
 
 private[scatter] trait Plumbing {
@@ -55,14 +55,11 @@ private[scatter] trait Plumbing {
 
 	class ServiceRequest(val request: HttpRequest) {
 
-		def >>>[A <% Route](route: A): HttpResponse = {
-			makeRequest(route, request)
-		}
-
-		protected def makeRequest(route: Route, request: HttpRequest): HttpResponse = {
+		def >>>[A](route: A)
+		          (implicit c: A => HttpServiceLogic,
+		           rejectionHandler: RejectionHandler = RejectionHandler.Default): HttpResponse = {
 			testService(request)(route).response
 		}
-
 	}
 
 

@@ -17,8 +17,8 @@
 package org.scatter
 
 import cc.spray.test.SprayTest
-import cc.spray.Route
 import cc.spray.http.{HttpRequest, HttpResponse}
+import cc.spray.{RejectionHandler, Route}
 
 /**
  * Trait providing access to scatter and its request transformations and
@@ -27,7 +27,12 @@ import cc.spray.http.{HttpRequest, HttpResponse}
 trait Scatter extends Plumbing with Transformations with Validations {
 	this: SprayTest =>
 
-	implicit def requestChain2Validator[A](r: A)(implicit route: Route, conv: A => RequestChain): Validator = {
+	implicit def requestChain2Validator[A](r: A)
+	                                      (implicit route: Route,
+	                                       conv: A => RequestChain,
+		                                     rejectionHandler:RejectionHandler = RejectionHandler.Default
+		                                      ): Validator = {
+
 		val response = new ServiceRequest(r.toHttpRequest) >>> route
 		new Validator(response)
 	}
